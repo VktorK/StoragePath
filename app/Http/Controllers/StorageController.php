@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Http\Requests\Storage\IndexStorageRequest;
 use Illuminate\Http\Request;
+use App\Services\StorageService;
 
 
 class StorageController extends Controller
