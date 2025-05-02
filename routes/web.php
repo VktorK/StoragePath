@@ -5,6 +5,6 @@ use App\Http\Controllers\StorageController;
 
 Route::get('/', function () {
     return view('welcome');
-});
+})->name('welcome');
 
 Route::get('/storage', [StorageController::class, 'index'])->name('storage.index');

@@ -34,8 +34,11 @@
     </table>
 
 
-    @if ($path)
+    @if ($path !== '.' && !empty(trim($path, '/')))
         <a href="{{ route('storage.index', ['path' => dirname($path)]) }}" class="btn btn-secondary">Назад</a>
+    @endif
+    @if ($path == '.' && !empty(trim($path, '/')))
+        <a href="{{ route('welcome') }}" class="btn btn-secondary">Домой</a>
     @endif
 </div>
 
