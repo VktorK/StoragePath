@@ -35,6 +35,10 @@ Generate a new application key
 
     php artisan key:generate
 
+Create a new migration
+
+    php artisan migrate
+
 Start the local development server
 
     php artisan serve
